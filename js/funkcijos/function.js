@@ -40,7 +40,7 @@ Laba diena, as esu Jonas Jonaitis!
 */
 
 function intro(name, lastname) {
-return "Laba diena, as esu " + name + " " + lastname + "!";
+return 'Laba diena, as esu ' + name + '' + lastname + '!';
 }
 
 console.log(intro("Jonas", "Jonaitis"));
@@ -87,3 +87,4 @@ function words() {
 return;
 }
 console.log(words("labas", "rytas", "Lietuva"));
+
