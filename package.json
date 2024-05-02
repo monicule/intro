@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "nd": "node --watch ./nd.js",
     "function":"node --watch ./js/funkcijos/function.js",
     "boolean": "node --watch ./js/duomenys/boolean.js",
     "string": "node --watch ./js/duomenys/string.js",
@@ -10,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Monika",
   "license": "ISC",
   "description": ""
 }
