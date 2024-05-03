@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "bandymai": "node --watch ./bandymai.js",
     "nd": "node --watch ./nd.js",
     "function":"node --watch ./js/funkcijos/function.js",
     "boolean": "node --watch ./js/duomenys/boolean.js",
