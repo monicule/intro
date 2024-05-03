@@ -14,3 +14,24 @@ console.log(z)
 console.log(sub)
 console.log(dauginti)
 console.log(dalinti)
+
+// Stand up su Mantu
+
+function vardas(name) {
+return console.log(`Labas, ${name}!`);
+}
+
+vardas('Mantai');
+vardas('Monika');
+vardas('Saule');
+
+
+
+function howMany(text) {
+    return console.log(text.length);
+}
+
+howMany('Labas');
+howMany('Gyvenimas');
+
+
