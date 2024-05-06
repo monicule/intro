@@ -15,6 +15,10 @@ m = 9;
 console.log(m);
 m = 15;
 console.log(m);
+let u = 30;
+console.log(u);
+u = u+1;
+console.log(u);
 
 console.log(sum);
 console.log(sub);
@@ -66,6 +70,12 @@ console.log('----------');
 let markHigherBMI = MBMI > JBMI;
 console.log(markHigherBMI);
 
+if (MBMI > JBMI) {
+    greeting = "Mark's BMI is higher than John's!";
+}else{
+    greeting = "John's BMI is higher than Mark's!";
+}
+console.log(greeting)
 console.log('----------');
 
 Mm = 95;
@@ -79,3 +89,10 @@ console.log(JBMI3);
 
 let markHigherBMI3 = MBMI3 > JBMI3;
 console.log(markHigherBMI3);
+
+if (MBMI3 > JBMI3) {
+    greeting2 = "Mark's BMI is higher than John's!";
+}else{
+    greeting2 = "John's BMI is higher than Mark's!";
+}
+console.log(greeting2);
