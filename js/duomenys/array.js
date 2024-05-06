@@ -17,12 +17,17 @@ const average1 = sum / count;
 
 console.log(average1);
 
-
+//              0, 1, 2, 3, 4, ....
 const marks = [10, 2, 8, 4, 6];
 console.log(marks);
 
+console.log('>>>', marks [0]);
+console.log('>>>', marks [1]);
+console.log('>>>', marks [2]);
+console.log('>>>', marks [3]);
+console.log('>>>', marks [4]);
 
-const sum2 = marks[0] + marks[1] + marks[3];
+const sum2 = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
 const count2 = marks.length;
 const average2 = sum2 / count2;
 
@@ -30,9 +35,16 @@ console.log('Suma', sum2);
 console.log('Kiekis', count2);
 console.log('Vidurkis', average2);
 
-console.log('>>>', marks [0]);
+// 10, 2, 8, 4, 6
 
 let sum3 = 0;
-sum3 = sum3 + marks[0];
+let index = 0;
+
+
+sum3 += marks[index++];
+sum3 += marks[index++];
+sum3 += marks[index++];
+sum3 += marks[index++];
+sum3 += marks[index++];
 
 console.log(sum3);
