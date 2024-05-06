@@ -45,54 +45,55 @@ howMany('Labas');
 howMany('Gyvenimas');
 
 console.log('----------');
+console.clear();
 
 // Uzdavinys su Mark ir John
 
-let Mmass = 78;
-let Jmass = 92;
-let Mheight = 1.69;
-let Jheight = 1.95;
+const Mmass = 78;
+const Jmass = 92;
+const Mheight = 1.69;
+const Jheight = 1.95;
 
 // pirmo var BMI formule
-let MBMI = Mmass / (Mheight * Mheight);
-let JBMI = Jmass / (Jheight * Jheight);
+const MBMI = Mmass / (Mheight * Mheight);
+const JBMI = Jmass / (Jheight * Jheight);
 console.log(MBMI);
 console.log(JBMI);
 
 //antro var BMI formule
-let MBMI2 = Mmass / Mheight ** 2;
-let JBMI2 = Jmass / Jheight ** 2;
+const MBMI2 = Mmass / Mheight ** 2;
+const JBMI2 = Jmass / Jheight ** 2;
 console.log(MBMI2);
 console.log(JBMI2);
 
 console.log('----------');
 
-let markHigherBMI = MBMI > JBMI;
+const markHigherBMI = MBMI > JBMI;
 console.log(markHigherBMI);
 
 if (MBMI > JBMI) {
-    greeting = "Mark's BMI is higher than John's!";
+    answer = "Mark's BMI is higher than John's!";
 }else{
-    greeting = "John's BMI is higher than Mark's!";
+    answer = "John's BMI is higher than Mark's!";
 }
-console.log(greeting)
+console.log(answer)
 console.log('----------');
 
-Mm = 95;
-Jm = 85;
-Mh = 1.88;
-Jh = 1.76;
-let MBMI3 = Mm / (Mh * Mh);
-let JBMI3 = Jm / (Jh * Jh);
+const Mm = 95;
+const Jm = 85;
+const Mh = 1.88;
+const Jh = 1.76;
+const MBMI3 = Mm / (Mh * Mh);
+const JBMI3 = Jm / (Jh * Jh);
 console.log(MBMI3);
 console.log(JBMI3);
 
-let markHigherBMI3 = MBMI3 > JBMI3;
+const markHigherBMI3 = MBMI3 > JBMI3;
 console.log(markHigherBMI3);
 
 if (MBMI3 > JBMI3) {
-    greeting2 = "Mark's BMI is higher than John's!";
+    answer2 = "Mark's BMI is higher than John's!";
 }else{
-    greeting2 = "John's BMI is higher than Mark's!";
+    answer2 = "John's BMI is higher than Mark's!";
 }
-console.log(greeting2);
+console.log(answer2);
