@@ -49,34 +49,34 @@ console.clear();
 
 // Uzdavinys su Mark ir John
 
-const Mmass = 78;
-const Jmass = 92;
-const Mheight = 1.69;
-const Jheight = 1.95;
+const mMass = 78;
+const jMass = 92;
+const mHeight = 1.69;
+const jHeight = 1.95;
 
 // pirmo var BMI formule
-const MBMI = Mmass / (Mheight * Mheight);
-const JBMI = Jmass / (Jheight * Jheight);
-console.log(MBMI);
-console.log(JBMI);
+const mBMI = mMass / (mHeight * mHeight);
+const jBMI = jMass / (jHeight * jHeight);
+console.log(mBMI);
+console.log(jBMI);
 
 //antro var BMI formule
-const MBMI2 = Mmass / Mheight ** 2;
-const JBMI2 = Jmass / Jheight ** 2;
-console.log(MBMI2);
-console.log(JBMI2);
+const mBMI2 = mMass / mHeight ** 2;
+const jBMI2 = jMass / jHeight ** 2;
+console.log(mBMI2);
+console.log(jBMI2);
 
 console.log('----------');
 
-const markHigherBMI = MBMI > JBMI;
+const markHigherBMI = mBMI > jBMI;
 console.log(markHigherBMI);
 
-if (MBMI > JBMI) {
-    answer = "Mark's BMI is higher than John's!";
-}else{
-    answer = "John's BMI is higher than Mark's!";
+if (mBMI > jBMI) {
+    console.log('Marko BMI is higher than Johno!');
+} else {
+    console.log('Johno BMI is higher than Marko!');
 }
-console.log(answer)
+
 console.log('----------');
 
 const Mm = 95;
@@ -93,7 +93,7 @@ console.log(markHigherBMI3);
 
 if (MBMI3 > JBMI3) {
     answer2 = "Mark's BMI is higher than John's!";
-}else{
+} else {
     answer2 = "John's BMI is higher than Mark's!";
 }
 console.log(answer2);
