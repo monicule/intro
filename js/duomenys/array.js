@@ -40,7 +40,6 @@ console.log('Vidurkis', average2);
 let sum3 = 0;
 let index = 0;
 
-
 sum3 += marks[index++];
 sum3 += marks[index++];
 sum3 += marks[index++];
@@ -48,3 +47,34 @@ sum3 += marks[index++];
 sum3 += marks[index++];
 
 console.log(sum3);
+
+sum3 += marks[index--];
+sum3 += marks[index--];
+sum3 += marks[index--];
+sum3 += marks[index--];
+sum3 += marks[index--];
+
+console.log(sum3);
+
+console.clear();
+
+function marksAverage(marks) {
+    if (marks.length === 0) {
+        return 'Vidurkis: nera pazymiu.';
+    }
+    if (marks.length)
+
+    return 'Vidurkis: ' + marks[0];
+}
+
+const jonoPazymiai = [];
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(10);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(2);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
