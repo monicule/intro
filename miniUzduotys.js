@@ -49,7 +49,6 @@ console.log(sujungti2);
 const sujungti3 = miestai[4] + ', ' + miestai[3] + ', ' + miestai[2] + ', ' + miestai[1] + ', ' + miestai[0];
 console.log(sujungti3);
 
-
 console.log('---------')
 
 //Kintamuju palyginimas
@@ -188,3 +187,48 @@ if (marks <= marks2) {
 } else {
     console.log('Bandykite dar karta');
 }
+
+console.clear();
+
+// Ciklo for panaudojimas
+
+// 1
+
+let ciklas = 0;
+for (i = 0; i <= 0; i++) {
+    ciklas += i;
+}
+console.log(ciklas);
+
+ciklas = 0;
+for (i = 0; i <= 4; i++) {
+    ciklas += i;
+}
+console.log(ciklas);
+
+ciklas = 0;
+for (i = 0; i <= 100; i++) {
+    ciklas += i;
+}
+console.log(ciklas);
+
+ciklas = 0;
+for (i = 574; i <= 815; i++) {
+    ciklas += i;
+}
+console.log(ciklas);
+
+ciklas = 0;
+for (i = -50; i <= 50; i++) {
+    ciklas += i;
+}
+console.log(ciklas);
+
+ciklas = 0;
+for (i = -70; i <= 30; i++) {
+    ciklas += i;
+}
+console.log(ciklas);
+
+// 2
+
