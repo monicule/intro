@@ -7,7 +7,7 @@
     "miniUzduotys": "node --watch ./miniUzduotys.js",
     "array": "node --watch ./js/duomenys/array.js",
     "if": "node --watch ./js/palyginimas/if.js",
-    "bandymai": "node --watch ./bandymai.js",
+    "mantoNd": "node --watch ./mantoNd.js",
     "nd": "node --watch ./nd.js",
     "function":"node --watch ./js/funkcijos/function.js",
     "boolean": "node --watch ./js/duomenys/boolean.js",
