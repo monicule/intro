@@ -29,7 +29,7 @@ const miestai = ['Utena', 'Vilnius', 'Kaunas', 'Klaipeda', 'Ukmerge'];
 console.log(miestai);
 
 // Veiksmai su kintamaisiais
-const sum = (a + b + c);
+const sum = a + b + c;
 console.log(sum);
 
 const tekstas = pasisveikinimas + ' ' + linkejimas + ' ' + vsc;
@@ -97,12 +97,8 @@ if (x <= y) {
 const name = 'Monika';
 const surname = 'Monikaite';
 
-function howMany(text) {
-    return console.log(text.length);
-}
-
-howMany(name);
-howMany(surname);
+console.log(name.length);
+console.log(surname.length);
 
 // Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
 
@@ -230,5 +226,134 @@ for (i = -70; i <= 30; i++) {
 }
 console.log(ciklas);
 
+console.log('-------');
+
 // 2
 
+const text = 'abcdef';
+
+/*
+console.log(text[0]);
+console.log(text[1]);
+console.log(text[2]);
+console.log(text[3]);
+console.log(text[4]);
+console.log(text[5]);
+*/
+
+const jungti = text[5] + text[4] + text[3] + text[2] + text[1] + text[0];
+console.log(jungti);
+
+
+const text5 = ['a', 'b', 'c', 'd', 'e', 'f'];
+for (let i = 0; i < text5.length; i++) {
+    console.log(text5[text5.length - 1 - i]);
+}
+
+
+console.log('-------');
+
+// 3
+
+let dal3 = 0;
+let dal5 = 0;
+let dal7 = 0;
+
+for (i = 0; i < 11; i++) {
+    if (i % 3 === 0) {
+        dal3++
+    }
+    if (i % 5 === 0){
+        dal5++
+    }
+    if (i % 7 === 0) {
+        dal7++
+    }
+}
+
+console.log(dal3);
+console.log(dal5);
+console.log(dal7);
+console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.');
+console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.');
+console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.');
+
+
+console.log('-------');
+
+dal3 = 0;
+dal5 = 0;
+dal7 = 0;
+
+for (i = 8; i < 31; i++) {
+    if (i % 3 === 0) {
+        dal3++
+    }
+    if (i % 5 === 0){
+        dal5++
+    }
+    if (i % 7 === 0) {
+        dal7++
+    }
+}
+
+console.log(dal3);
+console.log(dal5);
+console.log(dal7);
+
+
+dal3 = 0;
+dal5 = 0;
+dal7 = 0;
+
+for (i = -18; i < 18; i++) {
+    if (i % 3 === 0) {
+        dal3++
+    }
+    if (i % 5 === 0){
+        dal5++
+    }
+    if (i % 7 === 0) {
+        dal7++
+    }
+}
+
+console.log(dal3);
+console.log(dal5);
+console.log(dal7);
+
+
+// Funkcijos
+
+// 1
+
+console.log('-------------------------');
+
+function tusciaFunkcija() {
+    return false;
+}
+console.log(tusciaFunkcija());
+
+// 2
+
+function daugyba(skaicius1, skaicius2) {
+const skaicius3 = skaicius1 * skaicius2;
+    return skaicius3;
+}
+console.log(daugyba(3, 5));
+console.log(daugyba(10, 5));
+console.log(daugyba(3, 10));
+
+// 3
+
+function skaitmenuKiekisSkaiciuje(kintamasis) {
+    if (number.isInteger (kintamasis) !== true) {
+       console.log('Pateikta netinkamo tipo reikšmė.');
+
+    } else {
+
+    }
+
+    
+    return 0;
+}
