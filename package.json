@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "numberSize": "node --watch ./numberSize.js",
+    "multiply": "node --watch ./multiply.js",
+    "typeof": "node --watch ./js/duomenys/typeof.js",
     "for": "node --watch ./js/ciklai/for.js",
     "miniUzduotys": "node --watch ./miniUzduotys.js",
     "array": "node --watch ./js/duomenys/array.js",
