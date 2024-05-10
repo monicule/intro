@@ -322,6 +322,8 @@ console.log(dal3);
 console.log(dal5);
 console.log(dal7);
 
+console.clear();
+
 
 // Funkcijos
 
@@ -344,16 +346,26 @@ console.log(daugyba(3, 5));
 console.log(daugyba(10, 5));
 console.log(daugyba(3, 10));
 
+console.log('-------------------------');
+
 // 3
 
-function skaitmenuKiekisSkaiciuje(kintamasis) {
-    if (number.isInteger (kintamasis) !== true) {
-       console.log('Pateikta netinkamo tipo reikšmė.');
+function skaitmenuKiekisSkaiciuje(n) {
+    if (typeof n !== 'number') {
+       return 'Pateikta netinkamo tipo reikšmė.';
 
-    } else {
-
-    }
-
-    
-    return 0;
+ } else {
+    const nAsText = '' + n;
+        return nAsText.length;
+    }   
 }
+
+console.log(skaitmenuKiekisSkaiciuje(5));
+console.log(skaitmenuKiekisSkaiciuje(781));
+console.log(skaitmenuKiekisSkaiciuje(37060123456));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje('asd'));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
+console.log(skaitmenuKiekisSkaiciuje(-37060123456));
+console.log(skaitmenuKiekisSkaiciuje(Infinity));
+console.log(skaitmenuKiekisSkaiciuje('labas'));
