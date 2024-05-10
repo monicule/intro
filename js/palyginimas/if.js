@@ -3,7 +3,7 @@ IF - palyginimas
 
 Palyginimo operatoriai:
 VISI: <, >, <=, >=, ==, !=, ===, !==
-NAUDOTINI: <, >, <=, >=, ===, !==,
+NAUDOTINI: <, >, <=, >=, ===, !==
 NENAUDOTINI: ==, !=
 
 Sablonai:
@@ -28,12 +28,10 @@ if (age < ageLimit) {
 if (age < ageLimit) {
     console.log('Sorry, bet esi per jaunas...');
 } else {
-    console.log('Ok, uzeik');
+    console.log('Ok, uzeik ir pasismagink ;)');
 }
 
-console.clear();
-
-if (4 >= 2) {
+if (4 == 2) {
     console.log('TAIP, daugiau');
 } else {
     console.log('NE, maziau');
@@ -46,28 +44,6 @@ console.clear();
 // blue -> melyna
 // green -> zalia
 // other -> Nezinau tokios spalvos...
-const color1 = 'white';
-const color2 = 'black';
-const color3 = 'red';
-const color4 = 'orange';
-const color5 = 'blue';
-const color6 = 'violet';
-const color7 = 'green';
-const color8 = 'yellow';
-
-let translation = '';
-
-if (color1 === 'red') {
-    translation = 'Raudona';
-} else if (color1 === 'blue') {
-    translation = 'Melyna';
-} else if (color1 === 'green') {
-    translation = 'Zalia';
-} else {
-    translation = 'Nezinau tokios spalvos...';
-}
-
-console.log('>>>', translation);
 
 function colorTranslation(color) {
     let translation = '';
@@ -83,8 +59,7 @@ function colorTranslation(color) {
     } else {
         translation = '...';
     }
-   
-    // COLOR -> SPALVA;
+
     return color + ' -> ' + translation;
 }
 
