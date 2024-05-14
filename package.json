@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "string:number": "node --watch ./js/metodai/string.js",
+    "method:string": "node --watch ./js/metodai/string.js",
     "codewars": "node --watch ./codewars/polish.js",
     "method:number": "node --watch ./js/metodai/number.js",
     "numberSize": "node --watch ./numberSize.js",
