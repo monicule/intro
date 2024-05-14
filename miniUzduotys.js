@@ -353,19 +353,93 @@ console.log('-------------------------');
 function skaitmenuKiekisSkaiciuje(n) {
     if (typeof n !== 'number') {
        return 'Pateikta netinkamo tipo reikšmė.';
+    }
+       const nAsText = '' + n;     // 'Infinity'
 
- } else {
-    const nAsText = '' + n;
-        return nAsText.length;
-    }   
+    if (!isFinite(n)) {
+       return 'Duok normalu skaiciu 👀';
 }
 
-console.log(skaitmenuKiekisSkaiciuje(5));
-console.log(skaitmenuKiekisSkaiciuje(781));
-console.log(skaitmenuKiekisSkaiciuje(37060123456));
-console.log(skaitmenuKiekisSkaiciuje(true));
-console.log(skaitmenuKiekisSkaiciuje('asd'));
+    let size = nAsText.length;
+
+    if (n % 1 !==0) {
+    size--;
+}
+    if (n < 0) {
+    size--;
+}
+
+    return size;
+}
+ 
+console.log(skaitmenuKiekisSkaiciuje(0), '-->', 1);
+console.log(skaitmenuKiekisSkaiciuje(2), '-->', 1);
+console.log(skaitmenuKiekisSkaiciuje(25), '-->', 2);
+console.log(skaitmenuKiekisSkaiciuje(4895), '-->', 4);
+console.log(skaitmenuKiekisSkaiciuje(3.14), '-->', 3);
+console.log(skaitmenuKiekisSkaiciuje(3.1415), '-->', 5);
+console.log(skaitmenuKiekisSkaiciuje(-25), '-->', 2);
+console.log(skaitmenuKiekisSkaiciuje(-4895), '-->', 4);
+console.log(skaitmenuKiekisSkaiciuje(-3.14), '-->', 3);
+console.log(skaitmenuKiekisSkaiciuje(-3.1415), '-->', 5);
+
 console.log(skaitmenuKiekisSkaiciuje(NaN));
-console.log(skaitmenuKiekisSkaiciuje(-37060123456));
 console.log(skaitmenuKiekisSkaiciuje(Infinity));
-console.log(skaitmenuKiekisSkaiciuje('labas'));
+console.log(skaitmenuKiekisSkaiciuje(-Infinity));
+
+console.log(skaitmenuKiekisSkaiciuje());
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje(false));
+console.log(skaitmenuKiekisSkaiciuje('zodis belekoks, ka zinau'));
+console.log(skaitmenuKiekisSkaiciuje('pomidoras'));
+console.log(skaitmenuKiekisSkaiciuje(''));
+console.log(skaitmenuKiekisSkaiciuje([]));
+console.log(skaitmenuKiekisSkaiciuje([1]));
+console.log(skaitmenuKiekisSkaiciuje([1, 2]));
+console.log(skaitmenuKiekisSkaiciuje(['labas']));
+console.log(skaitmenuKiekisSkaiciuje(['labas', 'rytas']));
+console.log(skaitmenuKiekisSkaiciuje(['labas', 'rytas', 'Lietuva']));
+console.log(skaitmenuKiekisSkaiciuje(undefined));
+console.log(skaitmenuKiekisSkaiciuje(null));
+console.log(skaitmenuKiekisSkaiciuje(didziausiasSkaiciusSarase));
+console.log(skaitmenuKiekisSkaiciuje(1e6));
+console.log(skaitmenuKiekisSkaiciuje());
+
+console.log('-------------------------');
+console.clear();
+
+
+// 4
+
+function didziausiasSkaiciusSarase(number) {
+    if (Array.isArray(number) !== true) {
+       return 'Pateikta netinkamo tipo reikšmė.';
+     } 
+     if (number.length === 0) {
+       return 'Pateiktas sąrašas negali būti tuščias.';
+     } 
+    
+      let didziausias = number[0];
+      for (let i = 0; i < number.length; i++) {
+        if (number[i] > didziausias) {
+         didziausias = number[i];
+      }
+   } 
+   return didziausias;
+  }
+
+  console.log(didziausiasSkaiciusSarase([1]));
+  console.log(didziausiasSkaiciusSarase([1, 2, 3]));
+  console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18]));
+  console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66]));
+  console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8]));
+  console.log(didziausiasSkaiciusSarase('pomidoras'));
+  console.log(didziausiasSkaiciusSarase([]));
+
+  console.log(didziausiasSkaiciusSarase(NaN));
+  console.log(didziausiasSkaiciusSarase(Infinity));
+  console.log(didziausiasSkaiciusSarase(-Infinity));
+
+  console.log(didziausiasSkaiciusSarase());
+  console.log(didziausiasSkaiciusSarase(true));
+  console.log(didziausiasSkaiciusSarase(false));
