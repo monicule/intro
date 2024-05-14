@@ -485,5 +485,39 @@ console.log(isrinktiRaides('ahgfajf', 0.14));
 console.log(isrinktiRaides('abcdef', NaN));
 console.log(isrinktiRaides());
 
+console.log('-------------------------');
+
 // 6
 
+function dalyba(x, y) {
+    if (typeof x !== 'number') {
+        return 'Pirmas kintamasis privalo būti skaičius.';
+    }
+    if (typeof y !== 'number') {
+        return 'Antras kintamasis privalo būti skaičius.';
+    }
+    if (!isFinite(x)) {
+        return 'Duok normalu skaiciu 👀';
+    }
+    if (!isFinite(y)) {
+        return 'Duok normalu skaiciu 👀';
+    }
+    if (y === 0) {
+        return 'Dalyba iš 0 negalima.';
+    }
+
+    let ats = x / y;
+    return ats;
+
+}
+
+console.log('' + dalyba(9, 3));
+console.log('' + dalyba('a', 3));
+console.log('' + dalyba(9, 'asdf'));
+console.log('' + dalyba(3.14, 3));
+console.log('' + dalyba(9, NaN));
+console.log('' + dalyba(null, 3));
+console.log('' + dalyba(9, 0));
+console.log('' + dalyba(-30, 3));
+console.log('' + dalyba([9], 3));
+console.log('' + dalyba(undefined, 3));
