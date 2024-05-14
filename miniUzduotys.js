@@ -443,3 +443,47 @@ function didziausiasSkaiciusSarase(number) {
   console.log(didziausiasSkaiciusSarase());
   console.log(didziausiasSkaiciusSarase(true));
   console.log(didziausiasSkaiciusSarase(false));
+
+  console.clear();
+
+
+  // 5
+
+  function isrinktiRaides(text, step) {
+    if (typeof (text) !== 'string') {
+        return 'Pirmasis kintamasis yra netinkamo tipo.';
+    }
+    if (0 === text.length > 100) {
+        return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio.';
+    }
+    if (typeof (step) !== 'number') {
+        return 'Antrasis kintamasis yra netinkamo tipo.';
+    }
+    if (step % 1 !== 0) {
+        return 'Antrasis kintamasis turi būti sveikasis skaičius.'
+    }
+    if (step <= 0) {
+        return 'Antrasis kintamasis turi būti didesnis už nulį.';
+    }
+    if (step > text.length) {
+        return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.';
+    }
+    let newText = '';
+    for (let i = step - 1; i < text.length; i += step) {
+        newText += text[i];
+    }
+        return newText;
+    }
+
+console.log(isrinktiRaides('abcdefg', 2));
+console.log(isrinktiRaides('abcdefghijkl', 3));
+console.log(isrinktiRaides('abc', 0));
+console.log(isrinktiRaides('abc', 4));
+console.log(isrinktiRaides('qwertyuiop', 2));
+console.log(isrinktiRaides('ahgfajf', 6.15));
+console.log(isrinktiRaides('ahgfajf', 0.14));
+console.log(isrinktiRaides('abcdef', NaN));
+console.log(isrinktiRaides());
+
+// 6
+
