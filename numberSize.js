@@ -66,4 +66,4 @@ console.log(numberSize(undefined));
 console.log(numberSize(null));
 console.log(numberSize(numberSize));
 console.log(numberSize(1e6));
-console.log(numberSize(7e5));
+console.log(numberSize());
