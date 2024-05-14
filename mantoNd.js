@@ -104,3 +104,52 @@ function intro(myname, mysurname, myage) {
 }
 
 console.log(intro(myname, mysurname, myage));
+
+// 05.10 workshop
+
+let labas = 'labas123';
+
+function pavad(labas) {
+    // funkcijos kodas
+    console.log(labas);
+}
+pavad(labas);
+
+function pavadinimas(a, b) {
+    return console.log(a + b);
+}
+
+pavadinimas(5, 7);
+
+function arLyginis(number) {
+    if(number % 2 === 0) {
+        console.log(`${number} yra lyginis`);
+    } else {                                    // skirtingi pateikimo variantai;
+        console.log(number + ' yra nelyginis');
+    }
+}
+
+arLyginis(7);
+
+
+function printNumber(count) {
+    for (let i = 0; i <= count; i++) {
+        console.log(i);
+    }
+}
+
+printNumber(10);
+
+const array = [11, 5, 11, -1, 20, 32]
+
+function biggestNumber(arr) {
+    let biggest = arr [0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr [i] > biggest) {
+            biggest = arr [i];
+        }
+      
+    }
+    return console.log(biggest);
+}
+biggestNumber(array);
