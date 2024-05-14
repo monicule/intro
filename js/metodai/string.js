@@ -121,9 +121,33 @@ console.log(dalis, dalis.length);
 
 console.log('25462548624862'.slice(2, 6));
 
+
+
 // console.log('fsg'.split());
+
 // console.log('fsg'.toLowerCase());
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+console.log(sentence.toLowerCase());
+console.log("ALPHABET".toLowerCase()); // 'alphabet'
+
 // console.log('fsg'.toUpperCase());
+const sentence2 = 'The quick brown fox jumps over the lazy dog.';
+console.log(sentence2.toUpperCase());
+
 // console.log('fsg'.trim());
+const greeting = '   Hello world!   ';
+console.log(greeting);
+console.log(greeting.trim());
+
 // console.log('fsg'.trimEnd());
+const greeting2 = '   Hello world!   ';
+console.log(greeting2);
+console.log(greeting2.trimEnd());
+
 // console.log('fsg'.trimStart());
+const greeting3 = '   Hello world!   ';
+console.log(greeting3);
+console.log(greeting3.trimStart());
+
+trimStart()
+trimLeft()
