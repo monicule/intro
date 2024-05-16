@@ -521,3 +521,4 @@ console.log('' + dalyba(9, 0));
 console.log('' + dalyba(-30, 3));
 console.log('' + dalyba([9], 3));
 console.log('' + dalyba(undefined, 3));
+console.log('' + dalyba(3, 9));
