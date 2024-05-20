@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "ternary":"node --watch ./js/palyginimas/ternary.js",
+    "math":"node --watch ./js/metodai/math.js",
     "arrow":"node --watch ./js/funkcijos/arrow.js",
     "matrix": "node --watch ./uzdaviniai/matrix.js",
     "clock": "node --watch ./uzdaviniai/clock.js",
