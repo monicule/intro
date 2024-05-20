@@ -118,3 +118,61 @@ console.log(solve(0, 8), 0);
 console.log(solve(7, 2), 3.5);
 console.log(solve(4.2, 1), 4.2);
 console.log(solve(9999, 11), 909);
+/*
+
+https://www.codewars.com/kata/5808e2006b65bff35500008f/train/javascript
+
+
+function position() {
+  const abc = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+  return 'Position of alphabet: '+ abc.indexOf();
+  }
+
+console.log(position("a"),"Position of alphabet: 1");
+console.log(position("z"),"Position of alphabet: 26");
+console.log(position("e"),"Position of alphabet: 5");
+*/
+
+https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/javascript
+
+function solution(str){
+  let array = str.split('');
+  array.reverse();
+  return array.join('');
+ }
+
+console.log(solution('world'), 'dlrow');
+console.log(solution('hello'), 'olleh');
+console.log(solution(''), '');
+console.log(solution('h'), 'h');
+
+function solution(str){
+  return str.split('').reverse().join('');  
+}
+
+console.log(solution('world'), 'dlrow');
+console.log(solution('hello'), 'olleh');
+console.log(solution(''), '');
+console.log(solution('h'), 'h');
+
+https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript
+
+function positiveSum(arr) {
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+    return sum;
+}
+
+console.log(positiveSum([1,2,3,4,5]),15);
+console.log(positiveSum([1,-2,3,4,5]),13);
+console.log(positiveSum([]),0);
+console.log(positiveSum([-1,-2,-3,-4,-5]),0);
+console.log(positiveSum([-1,2,3,4,-5]),9);
+
+
+const greetAbe = name => `Hello, ${name}!`;
+console.log(greetAbe(), 'Hello, Abe!', 'greetAbe()')
