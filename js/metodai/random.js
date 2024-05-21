@@ -37,5 +37,8 @@ for (let i = 0; i < 10; i++) {
     console.log(Math.floor(Math.random() * 10) + 1);
 }
 
+console.clear();
 
 // ND: Man reikia atsitiktinio skaiciaus intervale nuo 23 iki 617 imtinai.
+
+console.log(Math.floor(Math.random() * 617 - 23 + 1)) + 23;
