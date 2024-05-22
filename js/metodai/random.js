@@ -41,4 +41,10 @@ console.clear();
 
 // ND: Man reikia atsitiktinio skaiciaus intervale nuo 23 iki 617 imtinai.
 
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+console.log(randomInteger(23, 617));  
 console.log(Math.floor(Math.random() * 617 - 23 + 1)) + 23;
+
+// Math.floor(Math.random() * (max - min + 1)) + min 
