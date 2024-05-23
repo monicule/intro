@@ -21,7 +21,7 @@ console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]), 2100);
 
 function arrayPlusArray(arr1, arr2) {
   let sum = 0;
-  arr1 = [...arr1, ...arr2];
+  arr1 = [...arr1, ...arr2]; // panaudotas spread (apie ji metoduose spread.js)
   for (i = 0; i < arr1.length; i++) {
     sum += arr1[i];
   }
@@ -31,4 +31,8 @@ function arrayPlusArray(arr1, arr2) {
 
 function arrayPlusArray(arr1, arr2) {
   return arr1.concat(arr2).reduce((a, b) => a + b);
+}
+
+function arrayPlusArray(arr1, arr2) {
+  return [...arr1, ...arr2].reduce((t,s)=>t+s, 0);
 }
