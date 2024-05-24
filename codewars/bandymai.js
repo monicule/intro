@@ -264,3 +264,33 @@ console.log(leo(89), "Leo got one already!");
 console.log(leo(88), "Leo finally won the oscar! Leo is happy");
 console.log(leo(87), "When will you give Leo an Oscar?");
 console.log(leo(86), "Not even for Wolf of wallstreet?!");
+
+
+function evenOrOdd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd';
+}
+
+
+// https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/javascript VIDURKIS
+
+function findAverage(array) {
+  if (array.length === 0) {
+    return 0;
+  } else {
+  let sum = 0;
+    for (i = 0; i < array.length; i++) {
+      sum += array[i];
+    }
+        return sum / array.length;
+    }
+  }
+
+  console.log(findAverage([1,1,1]), 1);
+  console.log(findAverage([1,2,3]), 2);
+  console.log(findAverage([1,2,3,4]), 2.5);
+  console.log(findAverage([]), 0);
+  console.log(findAverage([1,1,1,2]));
+
+  function find_average(x) {
+      return x.length ? x.reduce((t,s)=>t+s,0)/x.length : 0;
+    }
