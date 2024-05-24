@@ -265,11 +265,19 @@ console.log(leo(88), "Leo finally won the oscar! Leo is happy");
 console.log(leo(87), "When will you give Leo an Oscar?");
 console.log(leo(86), "Not even for Wolf of wallstreet?!");
 
+// LYGINIS AR NE
 
 function evenOrOdd(number) {
   return number % 2 === 0 ? 'Even' : 'Odd';
 }
 
+function evenOrOdd(number) {
+  if (number % 2 === 0) {
+  return "Even";
+  } else {
+    return "Odd";
+  }
+}
 
 // https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/javascript VIDURKIS
 
