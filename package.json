@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "squaresum": "node --watch ./codewars/squaresum.js",
     "cube": "node --watch ./codewars/cube.js",
     "method:array": "node --watch ./js/metodai/array.js",
     "des": "node --watch ./js/metodai/des.js",
