@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "for-other": "node --watch ./js/ciklai/for-other.js",
+    "switch": "node --watch ./js/palyginimas/switch.js",
     "squaresum": "node --watch ./codewars/squaresum.js",
     "cube": "node --watch ./codewars/cube.js",
     "method:array": "node --watch ./js/metodai/array.js",
