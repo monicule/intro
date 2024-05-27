@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "average": "node --watch ./codewars/average.js",
     "for-other": "node --watch ./js/ciklai/for-other.js",
     "switch": "node --watch ./js/palyginimas/switch.js",
     "squaresum": "node --watch ./codewars/squaresum.js",
