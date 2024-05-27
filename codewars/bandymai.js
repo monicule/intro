@@ -302,3 +302,13 @@ function findAverage(array) {
   function find_average(x) {
       return x.length ? x.reduce((t,s)=>t+s,0)/x.length : 0;
     }
+
+  
+function position(letter) {
+  const abc = '0abcdefghijklmnopqrstuvwxyz';
+  return 'Position of alphabet: ' + abc.indexOf(letter);
+  }
+
+console.log(position("a"),"Position of alphabet: 1");
+console.log(position("z"),"Position of alphabet: 26");
+console.log(position("e"),"Position of alphabet: 5");
