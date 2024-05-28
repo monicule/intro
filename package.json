@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "survival": "node --watch ./codewars/survival.js",
+    "star": "node --watch ./codewars/star.js",
+    "madness": "node --watch ./codewars/madness.js",
     "method:array2": "node --watch ./js/metodai/array2.js",
     "ideas": "node --watch ./codewars/ideas.js",
     "average": "node --watch ./codewars/average.js",
