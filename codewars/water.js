@@ -12,7 +12,7 @@ console.log(litres(11.8), 5, 'should return 5 litres');
 console.log(litres(1787), 893, 'should return 893 litres');
 console.log(litres(0), 0, 'should return 0 litres');
 
-function litres(time) {
+/* function litres(time) {
   return Math.floor(time/2);
 }
 
@@ -27,3 +27,4 @@ function litres(time) {
 function litres(time) {
   return time>>1
 }
+*/
