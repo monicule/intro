@@ -121,7 +121,6 @@ console.log(dalis, dalis.length);
 
 console.log('25462548624862'.slice(2, 6));
 
-console.clear();
 console.log('-------------------');
 console.log('split()');
 
@@ -158,7 +157,6 @@ const username = ' vardenis        '.trim();
 // console.log('fsg'.trimEnd());
 // console.log('fsg'.trimStart());
 
-console.clear();
 
 const text = 'Labas rytas, Lietuva! Kaip tu, mieloji, ten laikais?';
 
