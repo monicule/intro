@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "water": "node --watch ./codewars/water.js",
+    "trouble": "node --watch ./codewars/trouble.js",
+    "drinks": "node --watch ./codewars/drinks.js",
     "survival": "node --watch ./codewars/survival.js",
     "star": "node --watch ./codewars/star.js",
     "madness": "node --watch ./codewars/madness.js",
