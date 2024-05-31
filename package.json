@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "mini": "node --watch ./uzdaviniai/mini.js",
+    "sheep": "node --watch ./codewars/sheep.js",
     "water": "node --watch ./codewars/water.js",
     "trouble": "node --watch ./codewars/trouble.js",
     "drinks": "node --watch ./codewars/drinks.js",
@@ -21,7 +23,7 @@
     "perimetras": "node --watch ./codewars/perimetras.js",
     "banjo": "node --watch ./codewars/banjo.js",
     "spread": "node --watch ./js/metodai/spread.js",
-    "eval": "node --watch ./nd/eval.js",
+    "eval": "node --watch ./uzdaviniai/eval.js",
     "apa": "node --watch ./codewars/apa.js",
     "random": "node --watch ./js/metodai/random.js",
     "object": "node --watch ./js/duomenys/object.js",
