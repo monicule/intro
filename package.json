@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "uppercase": "node --watch ./codewars/uppercase.js",
+    "new-methods": "node --watch ./qa/new-methods.js",
+    "d3": "node --watch ./qa/d3.js",
+    "june": "node --watch ./standup/june.js",
     "rewwords": "node --watch ./codewars/rewwords.js",
     "mini": "node --watch ./uzdaviniai/mini.js",
     "sheep": "node --watch ./codewars/sheep.js",
