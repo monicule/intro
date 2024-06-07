@@ -53,8 +53,6 @@ while (true) {
     }
 }
 
-console.clear();
-
 const marks = [10, 2, 8, 4, 6];
 for (let i = 0; i < marks.length; i++) {
     if (marks[i] === 4) {
@@ -63,7 +61,6 @@ for (let i = 0; i < marks.length; i++) {
     }
 }
 
-console.clear();
 
 for (let h = 1; h <= 12; h++) {
     for (let m = 0; m < 60; m += 5) {
