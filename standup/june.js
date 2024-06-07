@@ -53,6 +53,7 @@ const B = [
   "you cant make an omelette without breaking eggs",
   "you reap what you sow",
   "youre never too old to learn",
+  "Labas Pasauli"
 ];
 
 // Surasti ilgiausią stringą;
@@ -124,14 +125,120 @@ startWithA3(B);
 
 // Surasti stringą su daugiausia žodžių;
 
+function longest(array) {
+    let stringLongest = '';
+    let maxWordsCount = 0;
+    for (i = 0; i < array.length; i++) {
+        let wordCount = array[i].split(' ').length;
+        if (wordCount > maxWordsCount) {
+            maxWordsCount = wordCount;
+            stringLongest = array[i];         
+        }
+        }
+    return console.log(`Ilgiausias stringas: ${stringLongest}, jis turi ${maxWordsCount} zodzius`);
+    }
+longest(B);
+
 
 
 // Surasti stringą su mažiausiai žodžių;
 
+function shortest(array) {
+    let shortest = array[0];
+    for (i = 0; i < array.length; i++) {
+        if (array[i].split(' ').length < shortest.split(' ').length) {
+        shortest = array[i];
+    }
+}
+return console.log(shortest);
+}
+shortest(B);
 
 
 // Suskaičiuoti kiek stringų turi daugiau nei 4 žodžius;
+
+function moreThan4(array) {
+    let moreThan4 = 0;
+        for (i = 0; i < array.length; i++) {
+        if (array[i].split(' ').length > 4) {
+        moreThan4++;
+            }    
+        }
+        return console.log(moreThan4);
+    }
+moreThan4(B);
+
+
 // Suskaičiuoti kiek masyve yra žodžių;
+
+function sumOfWords(array) {
+    let sumOfWords = 0;
+       for (i = 0; i < array.length; i++) {
+        sumOfWords += array[i].split(' ').length++;
+    }
+
+return console.log(sumOfWords);
+}
+sumOfWords(B);
+
+
 // Suskaičiuoti visas ‘s’ raides;
+
+function allS(array) {
+    let totalallS = 0;
+ 
+    for (let i = 0; i < array.length; i++) {
+        let str = array[i];
+        for (let j = 0; j < str.length; j++) {
+            if (str[j] === 's' || str[j] === 'S') {
+                totalallS++
+        }
+    }
+
+        }
+    return console.log(totalallS);
+}
+allS(B);
+
+
 // Suskaičiuoti kiek masyve yra raidžių (tarpų tarp žodžių neskaičiuoti!);
-// Surasti ilgiausią žodį (ne stringą, o atskirą stringo žodį!);
+
+function allLetters(array) {
+    let countAllLetters = 0;
+ 
+    for (let i = 0; i < array.length; i++) {
+        countAllLetters += (array[i].match(/[a-z]/g) || []).length;  
+    }
+    return console.log(`Masyve yra ${countAllLetters} raidžių (tarpų tarp žodžių neskaičiuojant!)`);
+}
+allLetters(B);
+
+// sicia suskaiciuos ir skaicius, kurie yra masyve, ne tik raides
+
+let raides = 0;
+for (let i = 0; i < B.length; i++) {
+    let str = B[i];
+    for (let j = 0; j < str.length; j++) {
+            if (str[j] !== ' ') {
+            raides++
+        }
+    }
+}
+console.log(raides)
+
+
+// Surasti ilgiausią žodį (ne stringą, o atskirą stringo žodį!)
+
+function longestWord(array) {
+    let word = '';
+    for (let i = 0; i < array.length; i++) {
+        let words = array[i].split(' ');
+        for (let j = 0; j < words.length; j++) {
+        if (words[j].length > word.length) {
+            word = words[j];
+        }
+    }
+}
+return console.log(word);
+}
+longestWord(B);
