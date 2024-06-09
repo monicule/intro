@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "pitagoras": "node --watch ./codewars/pitagoras.js",
     "length": "node --watch ./codewars/length.js",
     "magazines": "node --watch ./codewars/magazines.js",
     "bus": "node --watch ./codewars/bus.js",
