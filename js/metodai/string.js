@@ -200,3 +200,20 @@ console.log(greeting3.trimStart());
 
 //trimStart()
 //trimLeft()
+
+
+function abbrevName(name) {
+   let sep = name.split(' ');
+   let abbrev = (sep[0].charAt(0) + "." + sep[1].charAt(0)).toUpperCase();
+   return abbrev;    
+}
+
+console.log(abbrevName("Sam Harris"), "S.H");
+console.log(abbrevName("Patrick Feenan"), "P.F");
+console.log(abbrevName("Evan Cole"), "E.C");
+console.log(abbrevName("P Favuzzi"), "P.F");
+console.log(abbrevName("David Mendieta"), "D.M");
+
+function abbrevName(name){
+    return name.split(' ').map(o => o[0].toUpperCase()).join('.');
+}
