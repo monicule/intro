@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "century": "node --watch ./codewars/century.js",
     "love": "node --watch ./codewars/love.js",
     "remove": "node --watch ./codewars/remove.js",
     "mergearr": "node --watch ./codewars/mergearr.js",
