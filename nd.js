@@ -159,3 +159,21 @@ function financial(x) {
   
   console.log(financial('1.23e+5'));
   // Expected output: "123000.00"
+
+  let a = 5;
+	a = 7;
+	console.log(a);
+
+  const x = 10;
+const y = 9;
+console.log(y - x > x - y);
+
+for(let i = 1; i < 5; i++) {
+  console.log(i);
+}
+
+console.log(1 == "1")
+
+if (i != 5) {
+  return false;
+}

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "default": "node --watch ./js/funkcijos/default.js",
     "switching": "node --watch ./codewars/switching.js",
     "marbles": "node --watch ./codewars/marbles.js",
     "century": "node --watch ./codewars/century.js",
